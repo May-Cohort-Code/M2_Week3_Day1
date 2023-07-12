@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All Movies</h1>
+    {{#each allMovies}}
+    <div>  
+        <img src="{{poster}}" alt="">
+        <h1>{{title}}</h1>
+        <a href="/movies/{{_id}}">See Movie Details for {{title}}</a>
+     </div>
+     <br>
+     <br>
+    {{/each}}
+</body>
+</html>
